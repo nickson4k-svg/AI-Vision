@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Loader2, Image as ImageIcon, Trash2, Info, Cpu, Target, Plus, X } from 'lucide-react';
+import { Loader2, Image as ImageIcon, Trash2, Cpu, Target, Plus, X } from 'lucide-react';
 import * as tf from '@tensorflow/tfjs';
 import * as tmImage from '@teachablemachine/image';
 import { motion, AnimatePresence } from 'framer-motion';
