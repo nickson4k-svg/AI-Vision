@@ -1,32 +1,27 @@
-# React + TypeScript + Vite
+# AI Vision (Hardware Classifier)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Live Demo:** [https://ai-vision-iota.vercel.app/](https://ai-vision-iota.vercel.app/)
 
-Currently, two official plugins are available:
+A smart image classification app built with React, Vite, TailwindCSS, and Google Teachable Machine. 
+This application provides an **Infinite Canvas** where you can drag and drop multiple hardware photos (like Arduino, Raspberry Pi, ESP32) to have them instantly classified using a custom AI model!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- 🧠 **Custom AI Model:** Powered by Google Teachable Machine (`@teachablemachine/image`).
+- ♾️ **Infinite Canvas:** Upload multiple photos and drag them around freely on a virtual canvas using `framer-motion`.
+- ✨ **Glassmorphism UI:** Stunning, modern aesthetic featuring backdrop blurs and glowing neon accents.
+- 🎯 **Real-time Overlays:** Predictions dynamically float directly over your photos on the canvas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the Oxlint configuration
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+*Note: The `--legacy-peer-deps` flag is required because of a known peer dependency conflict between `@teachablemachine/image` and modern versions of `@tensorflow/tfjs`.*
