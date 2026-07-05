@@ -282,7 +282,7 @@ export default function App() {
                   minScale={0.1}
                   maxScale={4}
                   centerOnInit={true}
-                  wheel={{ step: 0.04, smoothStep: 0.005 }}
+                  wheel={{ step: 0.015 }}
                   panning={{ velocityDisabled: true }}
                 >
                   {({ zoomIn, zoomOut, resetTransform }) => (
