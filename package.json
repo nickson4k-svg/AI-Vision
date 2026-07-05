@@ -13,9 +13,11 @@
     "@teachablemachine/image": "^0.8.5",
     "@tensorflow/tfjs": "^4.22.0",
     "framer-motion": "^12.42.2",
+    "localforage": "^1.10.0",
     "lucide-react": "^1.23.0",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-zoom-pan-pinch": "^4.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.2",
