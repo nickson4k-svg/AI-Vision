@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Loader2, Image as ImageIcon, Trash2, Cpu, Target, Plus, X, Hand, ZoomIn, MousePointer2 } from 'lucide-react';
+import { Loader2, Image as ImageIcon, Trash2, Cpu, Target, Plus, X, Hand, ZoomIn, MousePointer2, Minus } from 'lucide-react';
 import * as tf from '@tensorflow/tfjs';
 import * as tmImage from '@teachablemachine/image';
 import { motion, AnimatePresence, useMotionValue } from 'framer-motion';
@@ -295,7 +295,7 @@ export default function App() {
                           </button>
                           <div className="w-full h-px bg-slate-700/50"></div>
                           <button onClick={() => zoomOut()} className="p-2 text-slate-400 hover:text-fuchsia-400 hover:bg-slate-800 rounded-lg transition-colors" title="Віддалити">
-                            <ZoomIn className="w-5 h-5 opacity-70" />
+                            <Minus className="w-5 h-5" />
                           </button>
                           <div className="w-full h-px bg-slate-700/50"></div>
                           <button onClick={() => resetTransform()} className="p-2 text-slate-400 hover:text-fuchsia-400 hover:bg-slate-800 rounded-lg transition-colors" title="Центрувати полотно">
